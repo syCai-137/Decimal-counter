@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/homework1/counter2/simulation/modelsim
+T_opt
+!s110 1716559282
+Vdb=KzT<iF0XF@XYEQo<MP0
+04 8 9 work counter2 structure 1
+=1-70cd0d98ed6a-66509db0-362-51a0
+o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+Ecounter2
+Z1 w1716559228
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 6DDd>lbPWRI7>5Y;d0UNJ1
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 m<lGLA;dkdX>NZ_a3[lHP1
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 Y_zQK4BzO^dekoVWQJXK42
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 ]U61Va_LYNhG@?LECIGGo1
+!i122 1
+R0
+Z10 8E:/homework1/counter2/simulation/modelsim/counter2.vho
+Z11 FE:/homework1/counter2/simulation/modelsim/counter2.vho
+l0
+L36 1
+V9LANC8NA4RAfLIOT:eD_a1
+!s100 BY1fP4chK00HBZbc5=[hg1
+Z12 OL;C;2020.4;71
+31
+Z13 !s110 1716559280
+!i10b 1
+Z14 !s108 1716559279.000000
+Z15 !s90 -reportprogress|300|-93|-work|work|E:/homework1/counter2/simulation/modelsim/counter2.vho|
+Z16 !s107 E:/homework1/counter2/simulation/modelsim/counter2.vho|
+!i113 0
+Z17 o-93 -work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 8 counter2 0 22 9LANC8NA4RAfLIOT:eD_a1
+!i122 1
+l87
+L52 324
+VABT@JJEHW<[R@LE[DHM9;1
+!s100 cg=Em@z_`9Q9QCnWmDRJj1
+R12
+31
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Abehav
+DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R7
+R8
+DEx4 work 8 counter2 0 22 _XDVYhBkj6b4MDdA<I^4C0
+!i122 0
+l14
+L10 45
+VnJPHcI_m6]=f6OR;LjN832
+!s100 E^[hXIU:?7bN2jem4ATC?2
+R12
+31
+!s110 1716559279
+!i10b 1
+R14
+!s90 -reportprogress|300|-93|-work|work|E:/homework1/counter2/counter2.vhd|
+!s107 E:/homework1/counter2/counter2.vhd|
+!i113 0
+R17
+R18
+FE:/homework1/counter2/counter2.vhd
+w1716559210
+8E:/homework1/counter2/counter2.vhd

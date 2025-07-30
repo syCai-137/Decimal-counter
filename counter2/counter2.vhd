@@ -1,0 +1,54 @@
+LIBRARY IEEE;  --测频控制电路
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+ENTITY counter2 IS
+    PORT (CLKK : IN STD_LOGIC;                 -- 1Hz
+        CNT_EN : OUT STD_LOGIC;                 -- 计数器时钟使能
+       RST_CNT : OUT STD_LOGIC;                 -- 计数器清零
+         Load : OUT STD_LOGIC    );              -- 输出锁存信号
+ END counter2;
+ARCHITECTURE behav OF counter2 IS
+	 type state_type is (Div_count,lock,clean);
+    SIGNAL Div2CLK : STD_LOGIC;
+	 signal present_state,next_state:state_type;
+BEGIN
+    PROCESS( CLKK )
+    BEGIN
+        IF CLKK'EVENT AND CLKK = '1' THEN      -- 1Hz时钟2分频
+            Div2CLK <= NOT Div2CLK;
+				present_state <= next_state;
+        END IF;
+    END PROCESS;
+	 
+    PROCESS (CLKK, Div2CLK)
+    BEGIN
+	 
+		case present_state is
+			when Div_count => CNT_EN <= Div2CLK;
+				if (Div2CLK = '0') then
+					next_state <= lock;
+					else
+					next_state <= Div_count;
+				end if;
+			when lock => Load <= NOT Div2CLK;
+				if (CLKK='0' AND Div2CLK='0') then
+					next_state <= clean;
+					else
+					next_state <= lock;
+				end if;
+			when clean => RST_CNT<= NOT CLKK;
+				if (CLKK='1' AND Div2CLK='1') then
+					next_state <= Div_count;
+					else
+					next_state <= clean;
+				end if;
+		end case;
+	 
+        --IF CLKK='0' AND Div2CLK='0' THEN RST_CNT<='1';-- 产生计数器清零信号
+        --  ELSE RST_CNT <= '0';  END IF;
+    END PROCESS;
+   -- Load  <= NOT Div2CLK;   --装载 
+	-- CNT_EN <= Div2CLK;--计数允许
+	
+	
+END behav;

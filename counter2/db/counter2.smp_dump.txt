@@ -1,0 +1,6 @@
+
+State Machine - |counter2|present_state
+Name present_state.clean present_state.lock present_state.Div_count 
+present_state.Div_count 0 0 0 
+present_state.lock 0 1 1 
+present_state.clean 1 0 1 
